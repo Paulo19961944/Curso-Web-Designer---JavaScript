@@ -7,13 +7,13 @@
 </head>
 <body>
     <script>
-      let nomeAluno = window.prompt("Qual o nome do aluno?: ")  
-      let nota1 = Number(window.prompt("Digite a primeira nota: ").replace(",", "."))
-      let nota2 = Number(window.prompt("Digite a segunda nota: ").replace(",", "."))
-      let nota3 = Number(window.prompt("Digite a terceira nota: ").replace(",", "."))
-      let nota4 = Number(window.prompt("Digite a quarta nota: ").replace(",", "."))
-      let media = (nota1 + nota2 + nota3 + nota4) / 4
-      window.alert(`${nomeAluno} sua média é: ${media.toFixed(2)}`) 
+      let nomeAluno = window.prompt("Qual o nome do aluno?: ") // Captura o Nome do Aluno
+      let nota1 = Number(window.prompt("Digite a primeira nota: ").replace(",", ".")) // Captura a primeira nota e caso coloque virgula, substitui por ponto
+      let nota2 = Number(window.prompt("Digite a segunda nota: ").replace(",", ".")) // Captura a segunda nota e caso coloque virgula, substitui por ponto
+      let nota3 = Number(window.prompt("Digite a terceira nota: ").replace(",", ".")) // Captura a terceira nota e caso coloque virgula, substitui por ponto
+      let nota4 = Number(window.prompt("Digite a quarta nota: ").replace(",", ".")) // Captura a quarta nota e caso coloque virgula, substitui por ponto
+      let media = (nota1 + nota2 + nota3 + nota4) / 4 // Calcula a Média
+      window.alert(`${nomeAluno} sua média é: ${media.toFixed(2)}`) // Exibe na Tela o Nome do Aluno e a Média
     </script>
 </body>
 </html>
