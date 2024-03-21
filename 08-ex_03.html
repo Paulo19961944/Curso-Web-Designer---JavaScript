@@ -13,7 +13,7 @@
       let nota3 = Number(window.prompt("Digite a terceira nota: ").replace(",", ".")) // Captura a terceira nota e caso coloque virgula, substitui por ponto
       let nota4 = Number(window.prompt("Digite a quarta nota: ").replace(",", ".")) // Captura a quarta nota e caso coloque virgula, substitui por ponto
       let media = (nota1 + nota2 + nota3 + nota4) / 4 // Calcula a Média
-      window.alert(`${nomeAluno} sua média é: ${media.toFixed(2)}`) // Exibe na Tela o Nome do Aluno e a Média
+      window.alert(`${nomeAluno} sua média é: ${media.toFixed(2).replace(".", ",")}`) // Exibe na Tela o Nome do Aluno e a Média, alem de trocar ponto por virgula
     </script>
 </body>
 </html>
