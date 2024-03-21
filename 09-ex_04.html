@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <script>
+        let diametro = parseFloat(prompt("Digite o diâmetro do circulo: ")) // Captura o diametro do circulo
+        let raio = diametro / 2 // Calcula o raio do circulo
+        let area = 3.141592 * raio ** 2 // Faz o calculo da área
+        // Se for um numero
+        if(!isNaN(diametro)){
+            window.alert(`O valor da area do circulo é: ${area.toFixed(2)}`) // Exibe um alert na tela
+        } else{
+            alert(`Você não digitou um número. Tente novamente!`); // Alert caso não seja um número
+        }
+    </script>
+</body>
+</html>
