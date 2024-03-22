@@ -7,12 +7,17 @@
 </head>
 <body>
     <script>
+        // Captura valores para as variáveis valor 1 e valor 2
         let valor1 = prompt(`Digite o valor 1: `)
         let valor2 = prompt (`Digite o valor 2: `)
-        let valor1Num = Number(valor1.replace(",", "."))
-        let valor2Num = Number(valor2.replace(",", "."))
-        let soma = valor1Num + valor2Num
-        console.log(soma)
+
+        // Converte os valotes para números
+        let valor1Num = Number(valor1.replace(",", ".")) // Troca os pontos por vírgula
+        let valor2Num = Number(valor2.replace(",", ".")) // Troca os pontos por vírgula
+        let soma = valor1Num + valor2Num // Soma os Valores das variáveis valor1 e valor 2
+        let somaStr = String(soma.toFixed(2)) // Converte a soma para String com duas casas após a vírgula
+        somaStr = somaStr.replace(".", ",") //  Troca ponto por vírgula na String de Soma
+        window.alert(`O resultado da soma é: ${somaStr}`) // Exibe na tela
         </script>
 </body>
 </html>
