@@ -1,13 +1,17 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 06</title>
+<!DOCTYPE html><!--HTML 5-->
+<html lang="pt-br"> <!--Linguagem PT-BR e Inicio HTML-->
+<!--Tag de Metadados-->
+<head> 
+    <meta charset="UTF-8"> <!--Cadeia de Caracteres-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Zoom inicial 1x-->
+    <title>Exercicio 06</title> <!--Titulo do Navegador-->
 </head>
+<!--Fim dos Metadados-->
+<!--Inicio do Conteúdo HTML-->
 <body>
+    <!--Inicio do JavaScript-->
     <script>
-        let vendedor = window.prompt("Digite o nome do vendedor: ") // Armazena o nome do vendedor
+        let vendedor = window.prompt("Digite o nome do vendedor: ") // Armazena o nome do vendedor 
         let fogao = Number(window.prompt("Digite a Quantidade da Vendas do Fogão: ")) // Armazena a quantidade de fogões vendidos
         let geladeira = Number(window.prompt("Digite a Quantidade da Vendas do Geladeira: ")) // Armazena a quantidade de geladeiras vendidas
         let microondas = Number(window.prompt("Digite a Quantidade da Vendas do Microondas: ")) // Armazena a quantidade de microondas vendidos
@@ -15,5 +19,8 @@
         let premioRecusado = `${vendedor}, infelizmente você não atingiu a meta!`//  Exibe se o vendedor não atingiu a meta
         fogao >= 18000 || geladeira >= 26800 || microondas >=4600 ?window.alert(premioConcedido) : window.alert(premioRecusado) // Desvio Condicional ?(Valor se verdadeiro) : (Valor se falso)
     </script>
+    <!--Fim do JavaScript-->
 </body>
-</html>
+<!--Fim do Conteúdo HTML-->
+</html> 
+<!--Fim do HTML-->
