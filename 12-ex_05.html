@@ -13,8 +13,8 @@
         let nota4 = Number(window.prompt("Digite a quarta nota: ")) // Armazena a quarta nota
         let faltas = Number(window.prompt("Digite as horas de falta: "))
         let media = (nota1 + nota2 + nota3 + nota4) / 4; // Armazena a média
-        let aprovado = "O aluno está aprovado"; // Mostra na tela que o aluno está aprovado
-        let reprovado = "O aluno está reprovado"; // Mostra na tela que o aluno está reprovado
+        let aprovado = `O aluno está aprovado e a nota é: ${media}\nFaltas: ${faltas} horas`; // Mostra na tela que o aluno está aprovado
+        let reprovado = `O aluno está reprovado e a nota é: ${media}\nFaltas: ${faltas} horas`; // Mostra na tela que o aluno está reprovado
         media >= 6 && faltas <= 10 ? alert(aprovado) : alert(reprovado) // Operador Ternário (Estrutura de Decisão ?(Valor se Verdadeiro) : (Valor se falso))
     </script>
 </body>
