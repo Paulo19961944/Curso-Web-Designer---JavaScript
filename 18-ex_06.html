@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        p{
-            text-align: center;
-            font-size: 1.3em;
-        }
     </style>
     <title>Exercicio</title>
 </head>
@@ -19,6 +15,12 @@
     <script>
         let paragrafo3 = document.getElementsByTagName('p')[2]
         paragrafo3.style.color = 'blue'
+        let paragrafos = document.getElementsByTagName('p')
+        
+        for(let textos of paragrafos){
+            textos.style.textAlign = 'center'
+            textos.style.fontSize = '1.5em'
+        }
     </script>
 </body>
 </html>
