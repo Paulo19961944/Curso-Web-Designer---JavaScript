@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
     <title>Query Selector</title>
 </head>
 <body>
@@ -23,7 +30,11 @@
         let linkRosa = document.querySelector(".link-rosa")
 
         primeiraDiv.style.backgroundColor = "turquoise"
+        primeiraDiv.style.padding = "16px"
+        primeiraDiv.style.textAlign = "center"
         segundaDiv.style.backgroundColor = "lightgreen"
+        segundaDiv.style.padding = "16px"
+        segundaDiv.style.textAlign = "center"
 
         linkVerde.style.color = "green"
         linkRosa.style.color = "crimson"
