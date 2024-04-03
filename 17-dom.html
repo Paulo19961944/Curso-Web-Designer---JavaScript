@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p{
+            font-size: 1.5em;
+        }
+    </style>
+    <title>DOM</title>
+</head>
+<body>
+    <p>Paragráfo 1</p>
+    <p>Paragráfo 2</p>
+
+    <script>
+        let paragrafo1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(paragrafo1.innerText)
+    </script>
+</body>
+</html>
