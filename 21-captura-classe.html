@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector - Capturar por Seleção</title>
+</head>
+<body>
+    <ol>
+        <li>Ferrari</li>
+        <li>Volvo</li>
+        <li class="azul">Jaguar</li>
+        <li>Bugatti</li>
+        <li>Porsche</li>
+    </ol>
+    <script>
+        let carroDestaque = document.getElementsByClassName("azul")[0]
+        carroDestaque.style.color = "blue"
+    </script>
+</body>
+</html>

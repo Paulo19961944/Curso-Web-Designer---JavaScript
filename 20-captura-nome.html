@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capturar Objetos por Nome</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+    </style>
+</head>
+<body>
+    <label for="name">Nome:</label>
+    <input type="text" name="nomeAluno" id="name">
+    <script>
+        let nomeDoAluno = document.getElementsByName("nomeAluno")[0]
+        nomeDoAluno.style.backgroundColor = 'black'
+        nomeDoAluno.style.color = "white"
+        nomeDoAluno.style.fontWeight = "bold"
+        nomeDoAluno.style.fontFamily = "Arial, Verdana, 'sans-serif'"
+    </script>
+</body>
+</html>
