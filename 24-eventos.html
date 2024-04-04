@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #caixa{
+            background-color: #0ff;
+            text-align: center;
+            padding: 16px;
+        }
+
+        #caixa:hover{
+            cursor: pointer;
+        }
+    </style>
+    <title>Eventos</title>
+</head>
+<body>
+    <div id="caixa" onclick="changeBackground()" onmouseout="alterarTexto()">SENAI Barueri</div>
+    <script>
+        let caixa = document.getElementById("caixa") // Captura o ID do elemento caixa
+
+        // Função para mudar cor de fundo ao clicar o mouse
+        function changeBackground(){
+            caixa.style.backgroundColor = "#0f0" // Muda para Verde
+
+            // Reseta a função depois de 4 Segundos
+            setTimeout(() => {
+                caixa.style.backgroundColor = ""
+            }, 4000)
+        }
+        
+        // Altera o texto ao sair do mouse
+        function alterarTexto(){
+            caixa.innerText = "WEBDESIGNER - FRONT END" //Insere um novo texto
+
+            // Reseta a função depois de 4 Segundos
+            setTimeout(() => {
+                caixa.innerText = "SENAI BARUERI" // Volta ao valor original
+            }, 4000)
+        }
+    </script>
+</body>
+</html>
