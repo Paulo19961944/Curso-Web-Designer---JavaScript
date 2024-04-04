@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*Reset CSS*/
+        *{
+            margin: 0; /*Zera a Margem*/
+            padding: 0; /*Zera o preenchimento*/
+            box-sizing: border-box; /*Não afeta o tamanho do  elemento com as bordas*/
+        }
+
+        /*Toda a Página*/
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif; /*Fontes*/
+            background-color: #F5F0F6; /*Cor de fundo clara*/
+            max-width: 100vw; /*Largura maxima em toda a tela*/
+            min-height: 100vh; /*Altura máxima em toda a tela*/
+            display: flex; /*Flexbox*/
+            flex-direction: column; /*Alinha em Colunas*/
+            justify-content: center; /*Alinha  no centro (Eixo Principal)*/
+            align-items: center; /*Alinha no centro (Eixo Perpendicular)*/
+            gap: 24px;
+        }
+
+        /*Temas Dark e Light*/
+        #dark, #light {
+            font-weight: 500; /*Peso da Fonte*/
+            text-align: center; /*Alinha texto ao centro*/
+            border: 1px solid #333; /*Borda Cinza*/
+            width: 150px; /*Largura de 150px*/
+            padding: 16px 8px; /*Preenchimento (top-bottom) && (left-right)*/
+            border-radius: 4px; /*Bordas Arredondadas*/
+        }
+
+        /*Evento ao passar o mouse no botão*/
+        #dark, #light:hover{
+            cursor: pointer; /*Mãozinha no Cursor*/
+        }
+
+        /*Botão Tema Escuro*/
+        #dark{
+            background-color: #87D68D; /*Cor de Fundo Verde*/
+        }
+
+        /*Botão Tema Claro*/
+        #light{
+            background-color: #5FBFF9; /*Cor de Fundo Azul*/
+        }
+    </style>
+    <title>Exercicio</title>
+</head>
+<body>
+    <div id="dark" onclick="darkMode()">Modo Escuro</div>
+    <div id="light" onclick="lightMode()">Modo Claro</div>
+    <script>
+        const corpo = window.document.body // Captura o Fundo
+        const dark = document.getElementById('dark') // Captura o botão Dark
+        const light = document.getElementById('light') // Captura o botão Light
+
+        // Função para o tema dark e dos elementos
+        function darkMode(){
+            corpo.style.backgroundColor = "#081A21" // Muda a cor do fundo da página
+            dark.style.backgroundColor = "#0E7C7B" // Muda a cor do fundo do botão dark
+            dark.style.border = "none" // Remove a borda
+            dark.style.color = "#eaeaea" // Muda a cor do botão dark
+            light.style.backgroundColor = "#FF0035" // Muda a cor do fundo do botão light
+            light.style.border = "none" // Remove a borda
+            light.style.color = "#eaeaea" // Muda a cor do botão light
+        }
+
+        // Função para o tema light e dos elementos
+        function lightMode(){
+            // Recarrega a pagina
+            window.location.reload()
+        }
+    </script>
+</body>
+</html>
