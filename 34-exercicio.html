@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            max-width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        div{
+            background-color: #303030;
+            border-radius: 4px;
+            color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            width: 350px;
+            height: 40px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        div:hover{
+            transform: scale(1.02);
+        }
+
+        #encerrar-compra{
+            margin-top: 48px;
+            width: 200px;
+        }
+
+        #resultado{
+            font-size: 1.2em;
+            margin-top: 48px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="camera">Comprar Camera de 800R$</div>
+    <div id="carrinho">Comprar Miniatura de Carrinho de 1200R$</div>
+    <div id="jogo">Comprar Call of Duty de 200R$</div>
+    <div id="encerrar-compra">Finalizar Compra</div>
+    <p id="resultado"></p>
+    <script>
+        let valorResultado = document.getElementById('resultado')
+        let getCamera = document.getElementById('camera')
+        let getCarrinho = document.getElementById('carrinho')
+        let getJogo = document.getElementById('jogo')
+        let encerrarCompra = document.getElementById('encerrar-compra')
+        let valorCompra = 0;
+
+        getCamera.addEventListener('click', () => {
+            valorCompra += 800
+            console.log(valorCompra)
+        })
+        
+        getCarrinho.addEventListener('click', () => {
+            valorCompra += 1200
+            console.log(valorCompra)
+        })
+        getJogo.addEventListener('click', () => {
+            valorCompra += 200
+            console.log(valorCompra)
+        })
+
+        encerrarCompra.addEventListener('click', () => {
+            let cupom = prompt('Possui Cupom?')
+
+            if((valorCompra > 1000 && cupom === 'sim') || (valorCompra > 1000 && cupom === 'Sim')){
+                valorCompra -= 100
+                valorResultado.innerText = `O valor total é: ${valorCompra}R$`
+            } else{
+                valorCompra = valorCompra
+                valorResultado.innerText = `O valor total é: ${valorCompra}R$`
+            }
+        })
+    </script>
+</body>
+</html>
