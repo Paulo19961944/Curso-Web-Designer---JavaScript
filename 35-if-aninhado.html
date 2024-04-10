@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            max-width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <title>IF Aninhado</title>
+</head>
+<body>
+    <script>
+        let valorEstoque = Number(window.prompt("Digite a porcentagem do estoque: "))
+        if(valorEstoque <= 10){
+            alert("Estoque Baixo")
+        } else if(valorEstoque <= 50){
+            alert("Estoque em Atenção")
+        } else{
+            alert("Estoque Normal")
+        }
+    </script>
+</body>
+</html>
