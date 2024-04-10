@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family:  "Roboto", sans-serif;
+            font-family: "Raleway", sans-serif;
         }
 
         body{
@@ -24,14 +24,15 @@
         }
 
         div{
-            background-color: #28536B;
+            background-color: #246EB9;
+            font-size: 0.88em;
             border-radius: 4px;
             color: #fafafa;
             display: flex;
             justify-content: center;
             align-items: center;
             border: none;
-            width: 350px;
+            width: 320px;
             height: 40px;
             text-align: center;
             cursor: pointer;
@@ -42,13 +43,31 @@
         }
 
         #encerrar-compra{
+            background-color: #571F4E;
+            animation: pulse 2s infinite ease-in-out;
+            font-family: "Roboto Condensed", sans-serif;
+            font-size: 1.1em;
             margin-top: 48px;
-            width: 200px;
+            width: 240px;
         }
 
         #resultado{
             font-size: 1em;
             margin-top: 48px;
+        }
+
+        @keyframes pulse{
+            0%{
+                transform: scale(1);
+            }
+
+            50%{
+                transform: scale(1.03);
+            }
+
+            100%{
+                transform: scale(1);
+            }
         }
     </style>
     <title>Document</title>
@@ -57,7 +76,7 @@
     <div id="camera">Comprar Camera de 800 R$</div>
     <div id="carrinho">Comprar Miniatura de Carrinho de 1200 R$</div>
     <div id="jogo">Comprar Call of Duty de 200 R$</div>
-    <div id="encerrar-compra">Finalizar Compra</div>
+    <div id="encerrar-compra">🛒 Finalizar Compra</div>
     <p id="resultado"></p>
     <script>
         let valorResultado = document.getElementById('resultado')
