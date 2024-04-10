@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 100vw;
+            min-height: 100vh;
+        }
+
+        p{
+            font-size: 1.5em;
+        }
+    </style>
+    <title>Date</title>
+</head>
+<body>
+    <div>
+        <p id="dia"></p>
+    </div>
+
+    <script>
+        const date = new Date()
+        let dia = date.getDate()
+        let mes = date.getMonth() + 1
+        let ano = date.getFullYear()
+
+        dia < 10 ? dia = '0' + dia : dia
+        mes < 10 ? mes = '0' + mes : mes
+        ano < 10 ? ano = '0' + ano : ano
+    
+        let diaAtual = document.getElementById('dia')
+        diaAtual.innerHTML = `O dia atual é: ${dia}/${mes}/${ano}`
+    </script>
+</body>
+</html>

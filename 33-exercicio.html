@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: #fafafa;
+            max-width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        p{
+            font-size: 2em;
+        }
+    </style>
+    <title>Exercicio</title>
+</head>
+<body>
+    <div>
+        <p id="resposta"></p>
+    </div>
+    <script>
+        let idade = Number(window.prompt("Digite sua Idade: "))
+        if(idade >=18){
+            resposta.innerText = "Você é maior de idade"
+            resposta.style.color = "green"
+        }
+        else{
+            resposta.innerText = "Menor de Idade"
+            resposta.style.color = "red"
+        }
+    </script>
+</body>
+</html>
