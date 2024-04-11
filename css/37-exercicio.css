@@ -43,11 +43,25 @@ input{
 }
 
 #resultBtn:hover{
-    transform: scale(1.02);
+    animation: pulse 1.5s infinite ease-in-out;
 }
 
 #resposta{
     font-size: 1.2em;
     font-weight: 500;
     margin-top: 96px;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    
+    50%{
+        transform: scale(1.03);
+    }
+
+    100%{
+        transform: scale(1);
+    }
 }
