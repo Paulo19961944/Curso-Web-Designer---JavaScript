@@ -24,6 +24,7 @@ form{
 
 input{
     border: 1px solid #FAFAFF;
+    border-radius: 2px;
     color:#FAFAFF;
     background-color: #050505;
     margin: 8px 0 16px 0;
