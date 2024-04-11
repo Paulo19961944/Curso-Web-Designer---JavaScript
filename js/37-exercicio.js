@@ -1,6 +1,6 @@
 resultBtn.addEventListener('click', () => {
-    let local = Number(document.getElementById('pontuacaoLocal').value)
-    let visitante = Number(document.getElementById('pontuacaoVisitante').value)
+    let local = Number(pontuacaoLocal.value)
+    let visitante = Number(pontuacaoVisitante.value)
     if (local > visitante){
         resposta.innerText = 'Vitória do Time Local'
     } else if (local < visitante){
