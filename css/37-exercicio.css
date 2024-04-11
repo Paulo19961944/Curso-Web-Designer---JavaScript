@@ -39,6 +39,11 @@ input{
     margin-top: 32px;
     width: 200px;
     height: 32px;
+    cursor: pointer;
+}
+
+#resultBtn:hover{
+    transform: scale(1.02);
 }
 
 #resposta{
