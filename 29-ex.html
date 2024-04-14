@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #DADFF7;
+            margin-top: 96px;
+            max-width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        div{
+            background-color: #5A7D7C;
+            color: #DADFF7;
+            border: 2px solid #DADFF7;
+            border-radius: 4px;
+            width: 120px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .fundo-amarelo{
+            background-color: #FFC145;
+        }
+
+        .fundo-azul{
+            background-color: #001D4A;
+        }
+
+        .fundo-vermelho{
+            background-color: #F87575;
+        }
+    </style>
+    <title>Set Attribute</title>
+</head>
+<body class="fundo" id="corpo">
+    <div onclick="bgAmarelo()">Amarelo</div>
+    <div onclick="bgAzul()">Azul</div>
+    <div onclick="bgVermelho()">Vermelho</div>
+</body>
+<script>
+    function bgAmarelo(){
+        corpo.setAttribute("class", "fundo-amarelo")
+    }
+    function bgAzul(){
+        corpo.setAttribute("class", "fundo-azul")
+    }
+    function bgVermelho(){
+        corpo.setAttribute("class", "fundo-vermelho")
+    }
+</script>
+</html>
